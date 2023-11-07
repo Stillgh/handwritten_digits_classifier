@@ -1,0 +1,15 @@
+#conda env create -f environment.yml
+
+name: handwritten_digits_classifier
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.12
+  - pip
+  - pip:
+      - torch==2.1.0
+      - torchvision==0.16.0
+      - matplotlib==3.7.1
+      - numpy==1.23.5
